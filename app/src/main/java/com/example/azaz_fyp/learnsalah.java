@@ -2,11 +2,15 @@ package com.example.azaz_fyp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.MediaController;
+import android.widget.Toast;
 import android.widget.VideoView;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class learnsalah extends AppCompatActivity {
 
@@ -27,5 +31,30 @@ public class learnsalah extends AppCompatActivity {
         vid.setVideoURI(u);
         vid.start();
 
+    }
+
+    public void quiz(View view)
+    {
+        new SweetAlertDialog(learnsalah.this, SweetAlertDialog.SUCCESS_TYPE)
+                .setTitleText("Do you want play Game")
+                .setConfirmText("Yes")
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sDialog) {
+
+                        Toast.makeText(learnsalah.this, "Quiz activity ", Toast.LENGTH_SHORT).show();
+
+                    }
+                })
+                .setCancelText("No")
+                .setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sDialog) {
+
+                        sDialog.dismissWithAnimation();
+
+                    }
+                })
+                .show();
     }
 }
