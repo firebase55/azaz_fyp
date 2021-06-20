@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context=".homepage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="40dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/nim"
+                    android:onClick="namaz"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="150dp">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:text="Namaz(Timing)"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/time"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="150dp">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:text="Time alarts"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="1dp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/compass"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="150dp">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:text="Qibla Direction"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/duwa"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="150dp">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:text="Daily Dua"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

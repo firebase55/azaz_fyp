@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context=".mainActivityi">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:onClick="boy"
+        android:background="#D1E5F4"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:text="Boy"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:onClick="girl"
+        android:background="#EAE7E7"
+
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:text="girl"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>
